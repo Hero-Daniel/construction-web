@@ -135,69 +135,60 @@ nav .logo {
 .service-text p {
     font-weight: lighter;
 }
-.about-section {
+.about {
     display: flex;
-    min-height: 200vh;
+    height: 100vh;
     position: relative;
-    background-color: #faf7f2;
-}
-/* .about-content {
-    flex: 1;
-    padding: 100px 50px;
-    z-index: 2;
-    background-color: #faf7f2;
-}
+    z-index: 1;
+}  
 .about-text {
     flex: 1;
-    padding: 50px;
+    padding: 100px 50px;
     display: flex;
     flex-direction: column;
-    z-index: 2;
-    background-color: inherit;
     justify-content: center;
+    background-color: #faf7f2; 
+    color: black;
+    z-index: 2;
 }
 .about-text h2 {
     font-size: 2.5rem;
-    color: rgba(0, 0, 139, 0.603);
     margin-bottom: 20px;
+    color: rgba(0, 0, 139, 0.603);
 }
-.about-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-} */
-.about {
-    display: flex;
-    min-height: 200vh; /* Makes it scrollable */
-    position: relative;
-    background-color: white;
-  }
   
-  .about-content {
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}  
+.about-image {
     flex: 1;
+    background-image: url('/pexels-infinity-lifespaces-1420423121-30592246.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  
+  /* Parallax scroll effect (desktop only) */
+@media (min-width: 768px) {
+    .about-image {
+      background-attachment: fixed;
+      background-position: center 50%;
+    }
+} 
+  /* Next Section */
+.next-section {
+    min-height: 100vh;
+    background: white;
     padding: 100px 50px;
     z-index: 2;
-    background-color: white;
-  }
+    position: relative;
+}
   
-  .about-image {
-    flex: 1;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    background-image: url('/pexels-500photos-com-15338-93400.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.next-section h2 {
+    color: darkblue;
+}
+.next-section p {
+    color: #333;
+}
   
-  /* The section that covers the image */
-  .next-cover {
-    min-height: 100vh;
-    background-color: white;
-    padding: 100px 50px;
-  }
-  
-
-
