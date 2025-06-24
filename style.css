@@ -163,7 +163,7 @@ nav .logo {
 }  
 .about-image {
     flex: 1;
-    background-image: url('/pexels-infinity-lifespaces-1420423121-30592246.jpg');
+    background-image: url('pexels-infinity-lifespaces-1420423121-30592246.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
